@@ -1,0 +1,38 @@
+body{
+    margin: 0 0;
+    padding: 0 0 0 0;
+}
+
+nav{
+    background-color: black;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav ul{
+    float: right;
+    
+}
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+}
+li a{
+    display: block;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: larger;
+    color:rgb(0, 100, 0);
+    
+}
+li a:hover{
+    text-decoration: underline;
+
+}
+#welcome-section{
+    height: 510px;
+    background-color: rgb(48, 48, 48);
+}
