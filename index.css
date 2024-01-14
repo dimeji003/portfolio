@@ -65,7 +65,7 @@
     #welcome-text{
         font-size: 1.5em;
         text-align: center;
-        padding-top: 220px;
+        padding-top: 260px;
         
         
         
@@ -104,7 +104,7 @@
         padding-top: 60px;
         font-size: 45px;
         font-family: sans-serif;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
     .expertise-container{
         display: flex;
@@ -113,7 +113,7 @@
         width: 80%;
         margin: 0 auto;
         height: 30vh;
-        padding: 30px;
+        padding: 20px;
         gap: 25px;
         
 
@@ -140,6 +140,7 @@
         padding-left: 15px;
         font-family: 'Courier New', Courier, monospace;
         font-size: 15px;
+        margin-top: 17px;
     }
     #projects{
         padding-top: 70px;
@@ -181,6 +182,7 @@
     }
     .name-element{
         padding-top: 20px;
+        color: white;
         text-align: center;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         
@@ -191,6 +193,7 @@
     .stack-element{
         text-align: center;
         font-size: smaller;
+        color: white;
     }
    
     
@@ -230,6 +233,7 @@
         color: white;
         font-family: 'Courier New', Courier, monospace;
         font-size: 13px;
+        padding-top: 10px;
     }
     #mail-a{
         margin-bottom: 0px;
@@ -246,16 +250,33 @@
         
     }
    
-    #link{
-        line-height: 10px;
-    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        margin: 0 auto;
+        gap: 30px;
+        padding-top: 10px;
+       
+       }
+       .social a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+       }
 }
         
 
 @media screen and (min-width: 481px){
-    
     html{
         scroll-behavior: smooth;
+    }
+    body{
+        
+        
     }
     *{
         margin: 0 0;
@@ -263,10 +284,10 @@
     }
     #navbar{
         background-color: transparent;
-        height: 60px;
-        
+        position: fixed;
+        top: 0;
         width: 100%;
-        z-index: 2;
+        
     }
     nav ul{
         float: right;
@@ -282,7 +303,7 @@
         list-style-type: none;
         text-decoration: none;
         padding: 15px 25px;
-        font-size: larger;
+        font-size: x-large;
         color:rgb(0, 100, 0);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         
@@ -291,29 +312,116 @@
         text-decoration: underline;
     
     }
+    #welcome-container{
+        text-align: center;
+        
+        height: 100vh;
+        background-image: radial-gradient(rgba(15, 7, 7, 0.9), rgba(17, 6, 6, 0.736)), url('/media/wallpaper.webp');
+        backdrop-filter: blur(10px);
+    }
     #welcome-section{
         
         height: 600px;
         
+        
+    }
+    @keyframes typewriter{
+        from {
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
     }
     #welcome-text{
-        font-size: 2em;
+        padding-top: 220px;
         
-        margin: 0 auto;
-        text-align: center;
-        padding: 180px 0;
-        color: white;
+        
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
     }
-    #welcome-text p{
+    #name-text{
+        font-size: 50px;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 40px;
+
+        
+        text-align: center;
+        color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter 4s steps(30) 0s normal both;
+
+    }
+    #sub-text{
         font-family: 'Courier New', Courier, monospace;
         font-style: italic;
         color: rgb(0, 129, 0);
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.5em;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter 3s steps(30) 2s normal both;
     }
+    #expertise{
+        background-image: radial-gradient(rgba(15, 7, 7, 0.9), rgba(17, 6, 6, 0.736)), url('/media/expertiseback.webp');
+        height: 100vh;
+        background-size: cover;
+        backdrop-filter: blur(10px);
+        
+    }
+    .expertise-header{
+        text-align: center;
+        color: white;
+        padding-top: 60px;
+        font-size: 60px;
+        font-family: sans-serif;
+        margin-bottom: 40px;
+    }
+    .expertise-container{
+        display: flex;
+        flex-direction: row;
+        border: 3px solid white;
+        width: 80%;
+        margin: 0 auto;
+        height: 30vh;
+        padding: 30px;
+        gap: 50px;
+        
+
+    }
+    .svg{
+        fill: white;
+    }
+    .skill-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .skill{
+        color: white;
+        font-size: 25px;
+        font-family: sans-serif;
+        
+    }
+    .skill-p{
+        color: white;
+        width: 80%;
+        line-height: 23px;
+        border-left: 4px solid green;
+        padding-left: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+        
+
+    
     #projects{
         padding-top: 70px;
         background-color: #227c22c4;
-        height: 1100px;
+        height: 700px;
         position: relative;
     }
     #projects h2{
@@ -325,12 +433,61 @@
         border-right: 1px solid;
         padding-left: 2px;
         padding-right: 2px;
-        padding-bottom: 8px;
+        padding-bottom: 3px;
+        margin-bottom: 40px;
+        color: white;
     }
-   
-    #project-grid section{
-        border: 2px solid;
+    #project-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        gap: 40px;
+        
+        
     }
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        place-items: center;
+        
+        
+        
+    }
+    .name-div{
+        background-color: rgb(4, 75, 4);
+        width: 100%;
+        height: 100px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .image-element{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .name-element{
+        text-align: center;
+        padding-top: 20px;
+        color: white;
+        font-size: 20px;
+
+    }
+    .description-element{
+        text-align: center;
+    }
+    .stack-element{
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        padding-top: 8px;
+
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
     #contact{
         height: 450px;
         background-color: rgb(0, 30, 0);
@@ -352,20 +509,49 @@
         text-align: center;
         height: 600px;
     }
+    .contact-container{
+        width: 65%;
+        margin: 0 auto;
+    }
     #contact h2{
-        font-size: 60px;
-        padding-top: 220px;
+        font-size: 40px;
+        font-family: sans-serif;
+        padding-top: 180px;
         color: white;
     }
-    #contact a{
-        padding: 0 10px;
-        font-size: 30px;
-        text-decoration: none;
+    #contact p{
+        padding-top: 10px;
         color: white;
+        font-family: 'Courier New', Courier, monospace;
     }
-    #link{
-        line-height: 10px;
+    .mail a{
+        margin-bottom: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 10px;
     }
+    .mail{
+        border-bottom: 4px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 100px;
+        font-size: 20px;
+    }
+   .social{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 10px;
+   
+   }
+   .social a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+   }
+    
+    
 }
 @media screen and (min-width: 769px){
     html{
@@ -441,6 +627,7 @@
         font-size: 2em;
         width: 50%;
         margin: 0 auto;
+        font-size: 60px;
         
         text-align: center;
         color: white;
@@ -456,7 +643,7 @@
         text-align: center;
         width: 50%;
         margin: 0 auto;
-        font-size: 1.5em;
+        font-size: 1.8em;
         overflow: hidden;
         white-space: nowrap;
         animation: typewriter 3s steps(30) 2s normal both;
@@ -474,7 +661,7 @@
         padding-top: 60px;
         font-size: 75px;
         font-family: sans-serif;
-        margin-bottom: 40px;
+        margin-bottom: 55px;
     }
     .expertise-container{
         display: flex;
@@ -504,7 +691,7 @@
     }
     .skill-p{
         color: white;
-        width: 40%;
+        width: 55%;
         line-height: 27px;
         border-left: 4px solid green;
         padding-left: 15px;
@@ -530,6 +717,7 @@
         padding-right: 2px;
         padding-bottom: 3px;
         margin-bottom: 40px;
+        color: white;
     }
     #project-grid{
         display: grid;
@@ -572,6 +760,7 @@
     }
     .stack-element{
         text-align: center;
+        color: white;
     }
     
     
@@ -607,6 +796,7 @@
         color: white;
     }
     #contact p{
+        padding-top: 10px;
         color: white;
         font-family: 'Courier New', Courier, monospace;
     }
@@ -622,15 +812,20 @@
         padding-top: 100px;
         font-size: 20px;
     }
-    #contact a{
-        padding: 0 10px;
-        font-size: 30px;
-        text-decoration: none;
-        color: white;
-    }
-    #link{
-        line-height: 10px;
-    }
+   .social{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 10px;
+   
+   }
+   .social a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+   }
 
 }
 
