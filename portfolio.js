@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const projects = [
         {
             name: 'E-commerce Website',
-            image: '/media/vintagevanguard.jpg',
+            image: '/media/vanguard.jpg',
             description:'Online Clothing Store ',
             Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS'
         },
@@ -29,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function(){
         const imgElement = document.createElement('img')
         imgElement.src = project.image
         imgElement.alt = project.name + 'Image'
+        imgElement.classList.add('image-element')
+
+        const nameDiv= document.createElement('div')
+        nameDiv.classList.add('name-div')
 
         const nameElement = document.createElement('h1')
         nameElement.textContent = `${project.name}`
@@ -37,15 +41,15 @@ document.addEventListener("DOMContentLoaded", function(){
         const descriptionElement = document.createElement('p')
         descriptionElement.textContent = `${project.description}`
         descriptionElement.classList.add('description-element')
-        
+
         const stackElement = document.createElement('p')
         stackElement.textContent = `${project.Stack}`
         stackElement.classList.add('stack-element')
         
+        nameDiv.appendChild(nameElement)
+        nameDiv.appendChild(stackElement)
         gridItem.appendChild(imgElement)
-        gridItem.appendChild(nameElement)
-        gridItem.appendChild(descriptionElement)
-        gridItem.appendChild(stackElement)
+        gridItem.appendChild(nameDiv)
         objectGrid.appendChild(gridItem)
     })
 
