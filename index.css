@@ -78,6 +78,7 @@
         overflow: hidden;
         white-space: nowrap;
         animation: typewriter 4s steps(30) 0s normal both;
+        padding-top: 40px;
 
     }
     #sub-text{
@@ -317,6 +318,7 @@
         
         height: 100vh;
         background-image: radial-gradient(rgba(15, 7, 7, 0.9), rgba(17, 6, 6, 0.736)), url('/media/wallpaper.webp');
+        background-size: cover;
         backdrop-filter: blur(10px);
     }
     #welcome-section{
@@ -557,10 +559,7 @@
     html{
         scroll-behavior: smooth;
     }
-    body{
-        
-        
-    }
+    
     *{
         margin: 0 0;
         padding: 0 0 0 0;
@@ -826,6 +825,40 @@
     align-items: center;
     gap: 10px;
    }
+   #mail-a{
+        margin-bottom: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: white;
+        margin: 0 auto;
+        font-size: 25px;
+    }
+    .mail{
+        border-bottom: 4px solid black;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 100px;
+        
+    }
+   
+    .social{
+        display: flex;
+        flex-direction: row;
+        width: 25%;
+        margin: 0 auto;
+        gap: 30px;
+        padding-top: 10px;
+       
+    }
+    .social a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+    }
+
 
 }
 
