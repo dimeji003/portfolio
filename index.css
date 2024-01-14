@@ -166,6 +166,9 @@
         flex-direction: column;
         gap: 90px;
     }
+    .work-card{
+        text-decoration: none;
+    }
     .grid-item{
         display: flex;
         flex-direction: column;
@@ -447,6 +450,9 @@
         gap: 40px;
         
         
+    }
+    .work-card{
+        text-decoration: none;
     }
     .grid-item{
         display: flex;
