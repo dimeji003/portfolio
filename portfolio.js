@@ -8,9 +8,10 @@ document.addEventListener("DOMContentLoaded", function(){
         },
         {
             name: 'Book Library',
-            image: '/media/bookstore.jpg',
+            image: '/media/bookstore2.jpg',
             description: 'First project using ReactJs, Tried to Implement an array of Objects',
-            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS'
+            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://frontend-nu-blond-63.vercel.app/'
         },
         {
             name: 'Survey Form',
@@ -23,8 +24,12 @@ document.addEventListener("DOMContentLoaded", function(){
     const objectGrid = document.getElementById('project-grid')
     
     projects.forEach(project => {
-        const gridItem = document.createElement("div")
-        gridItem.classList.add("grid-item")
+        const workCard = document.createElement("a")
+        workCard.classList.add("work-card")
+        workCard.href=project.link
+
+        const gridItem = document.createElement('div')
+        gridItem.classList.add('grid-item')
 
         const imgElement = document.createElement('img')
         imgElement.src = project.image
@@ -50,7 +55,8 @@ document.addEventListener("DOMContentLoaded", function(){
         nameDiv.appendChild(stackElement)
         gridItem.appendChild(imgElement)
         gridItem.appendChild(nameDiv)
-        objectGrid.appendChild(gridItem)
+        workCard.appendChild(gridItem)
+        objectGrid.appendChild(workCard)
     })
 
 })
