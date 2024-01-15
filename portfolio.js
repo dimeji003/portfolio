@@ -59,4 +59,33 @@ document.addEventListener("DOMContentLoaded", function(){
         objectGrid.appendChild(workCard)
     })
 
+    const mainMenu = document.querySelector('.mainmenu')
+    const openMenu = document.querySelector('.openMenu')
+    const closeMenu = document.querySelector('.closeMenu')
+
+    openMenu.addEventListener('click', show)
+    closeMenu.addEventListener('click', close)
+
+
+
+    function show(){
+        mainMenu.style.display = 'flex'
+        mainMenu.style.top ='0'
+        
+    }
+    function close(){
+        mainMenu.style.top ='-100%'
+    }
+
+    const navIcon = document.querySelector('.navs')
+    const menu = document.querySelector('.mainmenu')
+
+    navIcon.addEventListener('click', hide)
+
+    function hide(){
+        menu.style.display= 'hidden'
+        
+    }
+    
+
 })
