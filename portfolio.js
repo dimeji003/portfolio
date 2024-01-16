@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){
             name: 'E-commerce Website',
             image: '/media/vanguard.jpg',
             description:'Online Clothing Store ',
-            Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS'
+            Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://vintage-lemon.vercel.app/'
         },
         {
             name: 'Book Library',
