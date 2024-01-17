@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function(){
             name: 'Survey Form',
             image: '/media/surveyform.jpg',
             description: 'Used to learn responsive design using Css',
-            Stack: 'HTML, CSS'
+            Stack: 'HTML, CSS',
+            link: 'https://survey-form-lilac-one.vercel.app/'
         }
     ]
     
