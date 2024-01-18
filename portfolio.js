@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
     const projects = [
         {
-            name: 'E-commerce Website',
+            name: '- E-commerce Website',
             image: '/media/vanguard.jpg',
             description:'Online Clothing Store ',
             Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
             link: 'https://vintage-lemon.vercel.app/'
         },
         {
-            name: 'Book Library',
+            name: '- Book Library',
             image: '/media/bookstore2.jpg',
             description: 'First project using ReactJs, Tried to Implement an array of Objects',
             Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
             link: 'https://frontend-nu-blond-63.vercel.app/'
         },
         {
-            name: 'Survey Form',
+            name: '- Survey Form',
             image: '/media/surveyform.jpg',
             description: 'Used to learn responsive design using Css',
             Stack: 'HTML, CSS',
