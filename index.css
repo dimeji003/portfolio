@@ -572,8 +572,8 @@
 
     
     #projects{
-        padding-top: 70px;
-        height: 60vh;
+        padding-top: 50px;
+        
     }
     #projects h2{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -897,9 +897,9 @@
     
     #projects{
         padding-top: 70px;
-        height: 80vh;
-        position: relative;
-        top: 60px;
+        padding-bottom: 30px;
+        
+        
     }
     #projects h2{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -943,7 +943,7 @@
     }
     .image-element{
         width: 100%;
-        height: 130px;
+        height: 140px;
         text-align: center;
     }
     .name-element{

@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(){
     const projects = [
         {
             name: '- E-commerce Website',
-            image: '/media/vanguard.jpg',
+            image: '/media/vintagevan.jpg',
             description:'Online Clothing Store ',
             Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
             link: 'https://vintage-vanguard.vercel.app/'
@@ -20,6 +20,13 @@ document.addEventListener("DOMContentLoaded", function(){
             description: 'Used to learn responsive design using Css',
             Stack: 'HTML, CSS',
             link: 'https://survey-form-lilac-one.vercel.app/'
+        },
+        {
+            name: '- Country API',
+            image: '/media/countryapi.jpg',
+            description: 'Used to learn responsive design using Css',
+            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://countryapi-hazel.vercel.app/'
         }
     ]
     
