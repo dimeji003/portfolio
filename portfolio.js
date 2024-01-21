@@ -95,6 +95,37 @@ document.addEventListener("DOMContentLoaded", function(){
         menu.style.display= 'hidden'
         
     }
+
+    document.addEventListener('scroll', function(){
+        const slideInElement = document.querySelector('#expertise')
+        const slideInPosition = slideInElement.getBoundingClientRect().top
+
+        const windowHeight = window.innerHeight
+
+        if (slideInPosition < windowHeight / 1.5) {
+            slideInElement.classList.add('active')
+        }
+    })
+    document.addEventListener('scroll', function(){
+        const slideInElement = document.querySelector('#projects')
+        const slideInPosition = slideInElement.getBoundingClientRect().top
+
+        const windowHeight = window.innerHeight
+
+        if (slideInPosition < windowHeight / 1.5) {
+            slideInElement.classList.add('activeproject')
+        }
+    })
+    document.addEventListener('scroll', function(){
+        const slideInElement = document.querySelector('.contact-container')
+        const slideInPosition = slideInElement.getBoundingClientRect().top
+
+        const windowHeight = window.innerHeight
+
+        if (slideInPosition < windowHeight / 1.5) {
+            slideInElement.classList.add('activecontact')
+        }
+    })
     
 
 })
