@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function(){
             link: 'https://vintage-vanguard.vercel.app/'
         },
         {
+            name: '- Construction Company',
+            image: '/media/constengltd.jpg',
+            description:'Construction Company Website ',
+            Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://constenglimited.vercel.app/'
+        },
+        {
             name: '- Book Library',
             image: '/media/bookstore2.jpg',
             description: 'First project using ReactJs, Tried to Implement an array of Objects',
