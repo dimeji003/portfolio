@@ -78,30 +78,37 @@ document.addEventListener("DOMContentLoaded", function(){
     const mainMenu = document.querySelector('.mainmenu')
     const openMenu = document.querySelector('.openMenu')
     const closeMenu = document.querySelector('.closeMenu')
+    const navLinks = document.querySelectorAll('.mainmenu a');
+    
+    
+
 
     openMenu.addEventListener('click', show)
     closeMenu.addEventListener('click', close)
 
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeNavbar);
+      });
+    
+    
+
 
 
     function show(){
-        mainMenu.style.display = 'flex'
-        mainMenu.style.top ='0'
-        
+        mainMenu.style.display ='flex'
+        mainMenu.style.top= '0'
     }
+    
+   
     function close(){
         mainMenu.style.top ='-100%'
     }
+    function closeNavbar() {
+        mainMenu.style.top = '-100%';
+      }
+    
 
-    const navIcon = document.querySelector('.navs')
-    const menu = document.querySelector('.mainmenu')
-
-    navIcon.addEventListener('click', hide)
-
-    function hide(){
-        menu.style.display= 'hidden'
-        
-    }
+    
 
     document.addEventListener('scroll', function(){
         const slideInElement = document.querySelector('#expertise')
