@@ -22,11 +22,11 @@ document.addEventListener("DOMContentLoaded", function(){
             link: 'https://wakil-library.vercel.app/'
         },
         {
-            name: '- Survey Form',
-            image: '/media/surveyform.jpg',
-            description: 'Used to learn responsive design using Css',
-            Stack: 'HTML, CSS',
-            link: 'https://survey-form-lilac-one.vercel.app/'
+            name: '- TO-DO App',
+            image: '/media/todoapp.jpg',
+            description: 'Leearning the basics of javascript',
+            Stack: 'HTML, CSS, JavaScript',
+            link: 'https://todo-app-delta-one-59.vercel.app/'
         },
         {
             name: '- Country API',
