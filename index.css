@@ -76,7 +76,7 @@
         
     }
     .closeicon{
-        fill: green;
+        fill: rgb(145, 240, 145);
     }
     li a:hover{
         text-decoration: underline;
@@ -146,7 +146,7 @@
         width: 80%;
         margin: 0 auto;
         padding-top: 20px;
-        color: rgb(217, 248, 217);
+        color: white;
     }
     .active{
         opacity: 2 !important;
@@ -379,7 +379,7 @@
         padding: 0 0 0 0;
     }
     #navbar{
-        background-color: transparent;
+        
         position: relative;
         z-index: 3;
         
@@ -407,7 +407,7 @@
         fill:rgb(145, 240, 145);
     }
     .closeicon{
-        fill: green;
+        fill: rgb(145, 240, 145);
     }
     nav ul{
         
@@ -510,7 +510,7 @@
     }
     
     #brief-text{
-        color: rgb(217, 248, 217);
+        color: white;
         padding-top: 40px;
     }
     .active{
@@ -766,7 +766,7 @@
        position: fixed;
        width: 100%;
         z-index: 40;
-        background-color: transparent;
+       background: none;
         
     }
     nav ul{
@@ -817,6 +817,8 @@
     #welcome-section{
         width: 60%;
         margin: 0 auto;
+        padding: 50px 0px;
+
         
         height: 100vh;
         
@@ -869,7 +871,7 @@
         animation: typewriter 3s steps(30) 2s normal both;
     }
     #brief-text{
-        color: rgba(219, 247, 227, 0.938);
+        color: white;
         font-size: 20px;
         padding-top: 20px;
 
@@ -911,6 +913,9 @@
         gap: 50px;
         
 
+    }
+    .experticons{
+        margin-left: 200px;
     }
     .svg{
         fill: white;

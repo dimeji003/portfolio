@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function(){
             link: 'https://vintage-vanguard.vercel.app/'
         },
         {
+            name: '-Role Playing Game',
+            image: '/media/game.jpg',
+            description: 'Basic JavaScript Role Playing Game',
+            Stack: 'HTML, CSS, JavaScript',
+            link: 'https://roleplayinggame.vercel.app/'
+        },
+        {
             name: '- Construction Company',
             image: '/media/constengltd.jpg',
             description:'Construction Company Website ',
