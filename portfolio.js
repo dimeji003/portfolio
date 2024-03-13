@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
         const workCard = document.createElement("a")
         workCard.classList.add("work-card")
         workCard.href=project.link
+        workCard.target="_blank"
 
         const gridItem = document.createElement('div')
         gridItem.classList.add('grid-item')
