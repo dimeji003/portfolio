@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(){
             image: '/media/blog.jpg',
             description: 'blog website',
             Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
-            link: 'myblog-rho-rust.vercel.app'
+            link: 'https://myblog-git-main-dimejis-projects.vercel.app'
         }
     ]
     
