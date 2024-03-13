@@ -8,6 +8,13 @@ document.addEventListener("DOMContentLoaded", function(){
             link: 'https://vintage-vanguard.vercel.app/'
         },
         {
+            name: '- Charity Foundation',
+            image: '/media/hoblawal.jpg',
+            description:'Charity Foundation',
+            Stack:'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://hoblawalfoundation.vercel.app/'
+        },
+        {
             name: '-Role Playing Game',
             image: '/media/game.jpg',
             description: 'Basic JavaScript Role Playing Game',
@@ -41,6 +48,13 @@ document.addEventListener("DOMContentLoaded", function(){
             description: 'Used to learn responsive design using Css',
             Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
             link: 'https://countryapi-hazel.vercel.app/'
+        },
+        {
+            name: '- Blog',
+            image: '/media/blog.jpg',
+            description: 'blog website',
+            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'myblog-rho-rust.vercel.app'
         }
     ]
     
