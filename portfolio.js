@@ -22,6 +22,20 @@ document.addEventListener("DOMContentLoaded", function(){
             link: 'https://roleplayinggame.vercel.app/'
         },
         {
+            name: '- Blog',
+            image: '/media/blog.jpg',
+            description: 'blog website',
+            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://myblog-git-main-dimejis-projects.vercel.app'
+        },
+        {
+            name: '- Country API',
+            image: '/media/countryapi.jpg',
+            description: 'Used to learn responsive design using Css',
+            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
+            link: 'https://countryapi-hazel.vercel.app/'
+        },
+        {
             name: '- Construction Company',
             image: '/media/constengltd.jpg',
             description:'Construction Company Website ',
@@ -42,20 +56,8 @@ document.addEventListener("DOMContentLoaded", function(){
             Stack: 'HTML, CSS, JavaScript',
             link: 'https://todo-app-delta-one-59.vercel.app/'
         },
-        {
-            name: '- Country API',
-            image: '/media/countryapi.jpg',
-            description: 'Used to learn responsive design using Css',
-            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
-            link: 'https://countryapi-hazel.vercel.app/'
-        },
-        {
-            name: '- Blog',
-            image: '/media/blog.jpg',
-            description: 'blog website',
-            Stack: 'HTML, CSS, JavaScript, NextJS, TailwindCSS, ReactJS',
-            link: 'https://myblog-git-main-dimejis-projects.vercel.app'
-        }
+        
+       
     ]
     
     const objectGrid = document.getElementById('project-grid')
