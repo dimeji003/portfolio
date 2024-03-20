@@ -1,370 +1,5 @@
-@media screen and (max-width: 480px){
-    html{
-        scroll-behavior: smooth;
-    }
-    body{
-        background-color: rgba(0, 0, 0, 0.925); 
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    
-    
-    *{
-        margin: 0 0;
-        padding: 0 0 0 0;
-        
-    }
-    #navbar{
-        background-color: transparent;
-        height: 0px;
-        
-        
-        
-        
-        
-    }
-    nav ul{
-        
-        display: none;
-        flex-direction: column;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        justify-content: center;
-        align-items: center;
-        z-index: 20;
-        transition: top 1s ease;
-        background: #000;
-        gap: 40px;
-        
-        
-    }
-    
-    nav ul li{
-        display: flex;
-        flex-direction: column;
-        gap: 4;
-        list-style-type: none;
-        
-    }
-    nav ul li a{
-        text-decoration: none;
-        padding: 0 9px;
-        color: green;
-    }
-    .openMenu{
-        display: flex;
-        color: green;
-        cursor: pointer;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        size: 40px;
 
-    }
-    .closeMenu{
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-    }
-    .openicon{
-        fill: rgb(145, 240, 145);
-        font-size: 90px;
-        
-    }
-    .closeicon{
-        fill: rgb(145, 240, 145);
-    }
-    li a:hover{
-        text-decoration: underline;
-    
-    }
-    #welcome-container{
-        background-image:  radial-gradient(rgba(15, 7, 7, 0.72), rgba(17, 6, 6, 0.856)), url('/media/wallpapermobile.jpg');
-        
-        
-        height: 100vh;
-        background-size: cover;
-    }
-    
-    @keyframes typewriter{
-        from {
-            width: 0;
-        }
-        to{
-            width: 100%;
-        }
-    }
-    #welcome-section{
-        margin-top: 0px;
-    }
-    .image-container{
-        padding-top: 180px;
-    }
-    
-    .profilepic{
-        border-radius: 50%;
-        border: 3px solid green;
-        
-    }
-    #welcome-text{
-        font-size: 1.5em;
-        text-align: center;
-        padding-top: 30px;
-        
-        
-        
-        color: white;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-    }
-    #name-text{
-        width: 60%;
-        margin: 0 auto;
-        overflow: hidden;
-        color: rgba(171, 243, 192, 0.938);
-        white-space: nowrap;
-        animation: typewriter 4s steps(30) 0s normal both;
-        padding-top: 40px;
-
-    }
-    #sub-text{
-        font-family: 'Courier New', Courier, monospace;
-        font-style: italic;
-        color: white;
-        width: 60%;
-        margin: 0 auto;
-        overflow: hidden;
-        white-space: nowrap;
-        animation: typewriter 3s steps(30) 2s normal both;
-
-    }
-    #brief-text{
-        font-size: 14px;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 20px;
-        color: white;
-    }
-    .active{
-        opacity: 2 !important;
-        transform: translateY(0) !important;
-        transition: opacity 3s, transform 3s;
-    }
-    #expertise{
-       
-        
-        height: 50vh;
-        background-size: cover;
-        backdrop-filter: blur(10px);
-        padding-top: 50px;
-        padding-bottom: 50px;
-        opacity: 0;
-        transform: translateY(30px);
-        
-    }
-    .expertise-header{
-        text-align: center;
-        color: white;
-        margin-top: 40px;
-        position: relative;
-        top: 30px;
-        font-size: 30px;
-        width: 250px;
-        margin: 0 auto;
-        margin-bottom: 80px;
-        
-    }
-    .expertise-container{
-        display: flex;
-        flex-direction: row;
-        border: 3px solid rgb(145, 240, 145);
-        width: 80%;
-        margin: 0 auto;
-        
-        padding: 20px;
-        gap: 25px;
-        
-
-    }
-    .svg{
-        fill: white;
-    }
-    .skill-container{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .skill{
-        color: white;
-        font-size: 20px;
-        font-family: sans-serif;
-        
-    }
-    .skill-p{
-        color: white;
-        width: 90%;
-        
-        border-left: 4px solid rgb(145, 240, 145);
-        padding-left: 15px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 13px;
-        margin-top: 9px;
-    }
-    .experticons{
-        width: 80%;
-        margin: 0 auto;
-        
-        margin-top: 20px;
-    }
-    .experticons span > *{
-        border: 2px solid rgb(182, 247, 182);
-        border-radius: 10px;
-        color: white;
-        padding: 5px;
-        line-height: 40px;
-    }
-    .activeproject{
-        opacity: 3 !important;
-        transform: translateY(0) !important;
-        transition: opacity 3s, transform 3s;
-    }
-    #projects{
-        padding-top: 70px;
-        opacity: 0;
-        transform: translateY(30px);
-        
-        
-        
-        padding-bottom: 40px;
-    }
-    #projects h2{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        width: 250px;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 1px;
-        margin-bottom: 25px;
-        color: white;
-        font-size: 30px;
-    }
-    #project-grid{
-        display: flex;
-        flex-direction: column;
-        gap: 90px;
-    }
-    .work-card{
-        text-decoration: none;
-        
-    }
-    .grid-item{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        margin: 0 auto;
-        
-        
-        
-    }
-    .name-div{
-        background-color: rgb(19, 27, 19);
-        width: 100%;
-        height: 100px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-
-    }
-    .name-element{
-        padding-top: 20px;
-        color: rgb(145, 240, 145);
-        text-align: center;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        
-    }
-    .description-element{
-        text-align: center;
-    }
-    .stack-element{
-        text-align: center;
-        font-size: smaller;
-        color: white;
-    }
-   
-    
-    
-    
-    input{
-        height: 40px;
-        width: 120px;
-        margin: 10px auto;
-        text-align: center;
-        background-color: black;
-        color: white;
-    }
-    #contact{
-        text-align: center;
-        height: 600px;
-        background-color: rgb(0, 30, 0);
-    }
-    .activecontact{
-        opacity: 2 !important;
-        transform: translateY(0) !important;
-        transition: opacity 3s, transform 4s;
-    }
-    .contact-container{
-        width: 85%;
-        margin: 0 auto;
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    #contact h2{
-        font-size: 30px;
-        padding-top: 150px;
-        color: white;
-    }
-    #contact p{
-        color: white;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 13px;
-        padding-top: 10px;
-    }
-    #mail-a{
-        margin-bottom: 0px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-decoration: none;
-        color: white;
-        margin: 0 auto;
-    }
-    .mail{
-        border-bottom: 4px solid black;
-        width: 60%;
-        margin: 0 auto;
-        padding-top: 100px;
-        
-    }
-   
-    .social{
-        display: flex;
-        flex-direction: row;
-        width: 55%;
-        margin: 0 auto;
-        gap: 30px;
-        padding-top: 10px;
-       
-       }
-       .social a{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        text-decoration: none;
-        color: white;
-       }
-}
-@media screen and (min-width: 481px){
+@media screen and (max-width: 1023px){
     html{
         scroll-behavior: smooth;
     }
@@ -404,10 +39,10 @@
     .openicon{
 
     
-        fill:rgb(145, 240, 145);
+        fill:rgba(171, 243, 192, 0.938);
     }
     .closeicon{
-        fill: rgb(145, 240, 145);
+        fill: rgba(171, 243, 192, 0.938);
     }
     nav ul{
         
@@ -437,7 +72,7 @@
         text-decoration: none;
         padding: 15px 25px;
         font-size: x-large;
-        color:rgb(0, 100, 0);
+        color:rgba(171, 243, 192, 0.938);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         
     }
@@ -448,6 +83,10 @@
     }
     #welcome-container{
         text-align: center;
+        display: flex;
+        
+        align-items: center;
+        
         
         height: 100vh;
         background-image: radial-gradient(rgba(15, 7, 7, 0.9), rgba(17, 6, 6, 0.736)), url('/media/wallpaper.webp');
@@ -457,17 +96,17 @@
     #welcome-section{
         width: 60%;
         margin: 0 auto;
+        display: flex;
         
-        height: 600px;
+        
+      
         
         
     }
-    .image-container{
-        padding-top: 60px;
-    }
+    
     .profilepic{
         border-radius: 50%;
-        border: 3px solid green;
+        border: 3px solid rgba(171, 243, 192, 0.938);
         
     }
     @keyframes typewriter{
@@ -478,10 +117,7 @@
             width: 100%;
         }
     }
-    #welcome-text{
-        padding-top: 220px;
-
-    }
+    
     #name-text{
         font-size: 50px;
         width: 50%;
@@ -511,7 +147,7 @@
     
     #brief-text{
         color: white;
-        padding-top: 40px;
+        padding-top: 20px;
     }
     .active{
         opacity: 2 !important;
@@ -522,13 +158,13 @@
     #expertise{
         opacity: 0;
         transform: translateY(30px);
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 110px;
+        padding-bottom: 110px;
         backdrop-filter: blur(10px);
         
     }
     .expertise-wrapper{
-        padding-top: 50px;
+        padding-top: 20px;
     }
     .expertise-header{
         text-align: center;
@@ -544,7 +180,7 @@
     .expertise-container{
         display: flex;
         flex-direction: row;
-        border: 3px solid rgb(145, 240, 145);
+        border: 3px solid rgba(171, 243, 192, 0.938);
         width: 80%;
         margin: 0 auto;
         padding: 20px;
@@ -563,14 +199,14 @@
     .skill{
         color: white;
         font-size: 25px;
-        font-family: sans-serif;
+        
         
     }
     .skill-p{
         color: white;
         width: 80%;
         line-height: 23px;
-        border-left: 4px solid rgb(145, 240, 145);
+        border-left: 4px solid rgba(171, 243, 192, 0.938);
         padding-left: 15px;
         font-family: 'Courier New', Courier, monospace;
     }
@@ -581,7 +217,7 @@
         margin-top: 20px;
     }
     .experticons span > *{
-        border: 2px solid rgb(182, 247, 182);
+        border: 2px solid rgba(171, 243, 192, 0.938);
         border-radius: 10px;
         color: white;
         padding: 3px;
@@ -596,10 +232,10 @@
 
     
     #projects{
-        padding-top: 50px;
+        padding-top: 80px;
         opacity: 0;
         transform: translateY(30px);
-        padding-bottom: 40px;
+        padding-bottom: 100px;
         
     }
     #projects h2{
@@ -652,7 +288,7 @@
     .name-element{
         text-align: center;
         padding-top: 20px;
-        color: rgb(145, 240, 145);
+        color: rgba(171, 243, 192, 0.938);
         font-size: 20px;
 
     }
@@ -743,17 +379,18 @@
     align-items: center;
     text-decoration: none;
     gap: 10px;
-    color: rgb(189, 243, 189);
+    color: rgba(171, 243, 192, 0.938);
    }
     
     
 }
-@media screen and (min-width: 821px){
+@media screen and (min-width: 1024px){
     html{
         scroll-behavior: smooth;
     }
     body{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgba(0, 0, 0, 0.925); 
     }
     
     
@@ -792,7 +429,7 @@
         text-decoration: none;
         padding: 15px 25px;
         font-size: x-large;
-        color: rgb(218, 253, 218);
+        color: rgba(171, 243, 192, 0.938);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         
         
@@ -809,18 +446,22 @@
     }
     #welcome-container{
         text-align: center;
+        display: flex;
+        
         
         height: 100vh;
         background-image: radial-gradient(rgba(15, 7, 7, 0.9), rgba(17, 6, 6, 0.736)), url('/media/wallpaper.webp');
         
     }
     #welcome-section{
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
-        padding: 50px 0px;
+        
+        display: flex;
+        align-items: center;
 
         
-        height: 100vh;
+       
         
         
     }
@@ -829,7 +470,7 @@
     }
     .profilepic{
         border-radius: 50%;
-        border: 3px solid green;
+        border: 3px solid rgba(171, 243, 192, 0.938);
         
     }
     @keyframes typewriter{
@@ -840,16 +481,13 @@
             width: 100%;
         }
     }
-    #welcome-text{
-        padding-top: 100px;
-
-    }
+    
     #name-text{
         
         width: 50%;
         margin: 0 auto;
-        font-size: 60px;
-        
+        font-size: 40px;
+        padding-top: 20px;
         
         text-align: center;
         color: rgba(171, 243, 192, 0.938);
@@ -865,15 +503,17 @@
         text-align: center;
         width: 50%;
         margin: 0 auto;
-        font-size: 1.8em;
+        font-size: 1.5em;
         overflow: hidden;
         white-space: nowrap;
         animation: typewriter 3s steps(30) 2s normal both;
     }
     #brief-text{
         color: white;
-        font-size: 20px;
+        font-size: 14px;
         padding-top: 20px;
+        
+        margin: 0 auto;
 
     }
     
@@ -886,27 +526,27 @@
         backdrop-filter: blur(10px);
         opacity: 0;
         transform: translateY(40px);
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 90px;
+        padding-bottom: 90px;
        
         
     }
     .expertise-header{
         text-align: center;
         color: white;
-        font-size: 55px;
+        font-size: 40px;
         
 
         width: 40%;
         margin: 0 auto;
     }
     .expertise-wrapper{
-        padding-top: 10px;
+        padding-top: 40px;
     }
     .expertise-container{
         display: flex;
         flex-direction: row;
-        border: 3px solid rgb(145, 240, 145);
+        border: 3px solid rgba(171, 243, 192, 0.938);
         width: 70%;
         margin: 0 auto;
         padding: 20px;
@@ -915,8 +555,21 @@
 
     }
     .experticons{
-        margin-left: 200px;
+        width: 80%;
+        margin: 0 auto;
+        
+        margin-top: 20px;
+        margin-left: 180px;
     }
+    .experticons span > *{
+        border: 2px solid rgba(171, 243, 192, 0.938);
+        border-radius: 10px;
+        color: white;
+        padding: 3px;
+        line-height: 40px;
+       
+    }
+
     .svg{
         fill: white;
     }
@@ -928,14 +581,14 @@
     .skill{
         color: white;
         font-size: 40px;
-        font-family: sans-serif;
+        
         
     }
     .skill-p{
         color: white;
         width: 55%;
         line-height: 27px;
-        border-left: 4px solid rgb(145, 240, 145);
+        border-left: 4px solid rgba(171, 243, 192, 0.938);
         padding-left: 15px;
         font-family: 'Courier New', Courier, monospace;
         font-size: 20px;
@@ -952,6 +605,7 @@
     #projects h2{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         width: 370px;
+        font-size: 40px;
         margin: auto;
         text-align: center;
         padding-left: 2px;
@@ -963,8 +617,9 @@
     #project-grid{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 80%;
+        width: 88%;
         margin: 0 auto;
+        gap: 50px;
         
         
     }
@@ -974,7 +629,7 @@
     .grid-item{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        
         margin: 0 auto;
         place-items: center;
         
@@ -987,6 +642,9 @@
         height: 110px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         
     }
     .image-element{
@@ -997,8 +655,9 @@
     .name-element{
         text-align: center;
         padding-top: 20px;
-        color: rgb(145, 240, 145);
+        color: rgba(171, 243, 192, 0.938);
         text-decoration: none;
+        font-size: large;
 
     }
     .description-element{
@@ -1007,6 +666,7 @@
     .stack-element{
         text-align: center;
         color: white;
+        font-size: medium;
     }
     
     
@@ -1107,6 +767,378 @@
     }
 
 
+}
+@media screen and (max-width: 480px){
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: rgba(0, 0, 0, 0.925); 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    
+    *{
+        margin: 0 0;
+        padding: 0 0 0 0;
+        
+    }
+    #navbar{
+        background-color: transparent;
+        height: 0px;
+        
+        
+        
+        
+        
+    }
+    nav ul{
+        
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+        transition: top 1s ease;
+        background: #000;
+        gap: 40px;
+        
+        
+    }
+    
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        gap: 4;
+        list-style-type: none;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 0 9px;
+        color: rgba(171, 243, 192, 0.938);
+    }
+    .openMenu{
+        display: flex;
+        color: green;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        size: 40px;
+
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+    .openicon{
+        fill: rgba(171, 243, 192, 0.938);
+        font-size: 90px;
+        
+    }
+    .closeicon{
+        fill: rgba(171, 243, 192, 0.938);
+    }
+    li a:hover{
+        text-decoration: underline;
+    
+    }
+    #welcome-container{
+        background-image:  radial-gradient(rgba(15, 7, 7, 0.72), rgba(17, 6, 6, 0.856)), url('/media/wallpapermobile.jpg');
+        
+        
+        height: 100vh;
+        background-size: cover;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        place-content: center;
+    }
+    
+    @keyframes typewriter{
+        from {
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    #welcome-section{
+        margin-top: 0px;
+        padding: 0;
+        display: flex;
+        place-content: center;
+    }
+    
+    
+    .profilepic{
+        border-radius: 50%;
+        border: 3px solid rgba(171, 243, 192, 0.938);
+        
+    }
+    #welcome-text{
+       
+        text-align: center;
+        padding-top: 30px;
+        
+        
+        
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+    #name-text{
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        color: rgba(171, 243, 192, 0.938);
+        white-space: nowrap;
+        animation: typewriter 2s steps(30) 0s normal both;
+        padding-top: 40px;
+        font-size: 35px;
+
+    }
+    #sub-text{
+        font-family: 'Courier New', Courier, monospace;
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: typewriter 3s steps(30) 2s normal both;
+
+    }
+    #brief-text{
+        font-size: 12px;
+        margin: 0 auto;
+        padding-top: 20px;
+        color: white;
+    }
+    .active{
+        opacity: 2 !important;
+        transform: translateY(0) !important;
+        transition: opacity 3s, transform 3s;
+    }
+    #expertise{
+       
+        
+        
+        background-size: cover;
+        backdrop-filter: blur(10px);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        opacity: 0;
+        transform: translateY(30px);
+        
+    }
+    .expertise-header{
+        text-align: center;
+        color: white;
+        margin-top: 40px;
+        position: relative;
+        top: 30px;
+        font-size: 30px;
+        width: 250px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+        
+    }
+    .expertise-container{
+        display: flex;
+        flex-direction: row;
+        border: 3px solid rgba(171, 243, 192, 0.938);
+        width: 80%;
+        margin: 0 auto;
+        
+        padding: 20px;
+        gap: 25px;
+        
+
+    }
+    .svg{
+        fill: white;
+    }
+    .skill-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill{
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+        
+    }
+    .skill-p{
+        color: white;
+        width: 90%;
+        
+        border-left: 4px solid rgba(171, 243, 192, 0.938);
+        padding-left: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+        margin-top: 9px;
+    }
+    .experticons{
+        width: 80%;
+        margin: 0 auto;
+        
+        margin-top: 20px;
+    }
+    .experticons span > *{
+        border: 2px solid rgba(171, 243, 192, 0.938);
+        border-radius: 10px;
+        color: white;
+        padding: 5px;
+        line-height: 40px;
+    }
+    .activeproject{
+        opacity: 3 !important;
+        transform: translateY(0) !important;
+        transition: opacity 3s, transform 3s;
+    }
+    #projects{
+        padding-top: 70px;
+        opacity: 0;
+        transform: translateY(30px);
+        
+        
+        
+        padding-bottom: 40px;
+    }
+    #projects h2{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 250px;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 1px;
+        margin-bottom: 25px;
+        color: white;
+        font-size: 30px;
+    }
+    #project-grid{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .work-card{
+        text-decoration: none;
+        
+    }
+    .grid-item{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        
+        
+        
+    }
+    .name-div{
+        background-color: rgb(19, 27, 19);
+        width: 100%;
+        height: 100px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+    }
+    .name-element{
+        padding-top: 20px;
+        color: rgba(171, 243, 192, 0.938);
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    .description-element{
+        text-align: center;
+    }
+    .stack-element{
+        text-align: center;
+        font-size: smaller;
+        color: white;
+    }
+   
+    
+    
+    
+    input{
+        height: 40px;
+        width: 120px;
+        margin: 10px auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    #contact{
+        text-align: center;
+        height: 600px;
+        background-color: rgb(0, 30, 0);
+    }
+    .activecontact{
+        opacity: 2 !important;
+        transform: translateY(0) !important;
+        transition: opacity 3s, transform 4s;
+    }
+    .contact-container{
+        width: 85%;
+        margin: 0 auto;
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    #contact h2{
+        font-size: 30px;
+        padding-top: 150px;
+        color: white;
+    }
+    #contact p{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    #mail-a{
+        margin-bottom: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: white;
+        margin: 0 auto;
+    }
+    .mail{
+        border-bottom: 4px solid black;
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 100px;
+        
+    }
+   
+    .social{
+        display: flex;
+        flex-direction: row;
+        width: 55%;
+        margin: 0 auto;
+        gap: 30px;
+        padding-top: 10px;
+       
+       }
+       .social a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+       }
 }
 
         
